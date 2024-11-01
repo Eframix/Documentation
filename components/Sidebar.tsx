@@ -82,7 +82,12 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
                     {section.items.map((link) => {
                       const isActive = pathname === link.href;
                       return (
-                        <li key={link.name}>
+                        <li
+                          key={link.name}
+                          onClick={() =>
+                            setTimeout(() => setIsOpen(false), 850)
+                          }
+                        >
                           <Link
                             href={link.href}
                             className={`block px-4 py-2 rounded-md text-sm transition-colors ${

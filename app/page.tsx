@@ -1,9 +1,9 @@
-import { ArrowRight, Github } from "lucide-react"
-import Link from "next/link"
+import { ArrowRight, Github } from "lucide-react";
+import Link from "next/link";
 
-import CopyCommand from "@/components/CommandCopy"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import CopyCommand from "@/components/CommandCopy";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -15,8 +15,8 @@ export default function Home() {
               Eframix
             </h1>
             <p className="max-w-2xl mx-auto text-xl text-muted-foreground">
-              A minimalistic Node.js framework inspired by Express.js, offering core
-              routing, middleware, and JSON body parsing features with zero
+              A minimalistic Node.js framework inspired by Express.js, offering
+              core routing, middleware, and JSON body parsing features with zero
               dependencies. Ideal for lightweight HTTP server applications.
             </p>
           </div>
@@ -29,7 +29,11 @@ export default function Home() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="https://github.com/Eframix/Eframix" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://github.com/Eframix/Eframix"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github className="mr-2 h-4 w-4" />
                 View on GitHub
               </Link>
@@ -60,13 +64,14 @@ export default function Home() {
         <p>© 2024 Eframix. All rights reserved.</p>
       </footer>
     </div>
-  )
+  );
 }
 
 const features = [
   {
     title: "Lightweight",
-    description: "Zero dependencies for a minimal footprint and fast performance.",
+    description:
+      "Zero dependencies for a minimal footprint and fast performance.",
     icon: ({ className }: { className?: string }) => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +91,8 @@ const features = [
   },
   {
     title: "Express-Inspired",
-    description: "Familiar API for developers coming from Express.js background.",
+    description:
+      "Familiar API for developers coming from Express.js background.",
     icon: ({ className }: { className?: string }) => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -124,4 +130,4 @@ const features = [
       </svg>
     ),
   },
-]
+];
